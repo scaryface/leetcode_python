@@ -17,10 +17,7 @@ class BuyAndSellStocks:
         BuyAndSellStocks.end_arr = [-1 for _ in range(n)]
         profit, start, end = BuyAndSellStocks.get_max_profit(
             self, prices, n-1)
-        # for i in range(n):
-        #     profit = max(profit, BuyAndSellStocks.max_profit_in_num_trade(
-        #         self, prices, i))
-        # print(profit, start, end)
+        # return BuyAndSellStocks.max_profit_in_num_trade(self, 2)
         return profit
 
     def get_buy_sell_matrix(self, prices: List[int]) -> List[int]:
@@ -58,8 +55,8 @@ class BuyAndSellStocks:
         else:
             return (curr_max, curr_start_idx, end)
 
-    def max_profit_in_num_trade(self, prices: List[int], end: int, num_trades=2) -> int:
-        #BuyAndSellStocks.max_profit_arr[end], BuyAndSellStocks.start_arr[end], BuyAndSellStocks.end_arr[end]
+    # ToDo: implementation
+    def max_profit_in_num_trade(self, num_trades=2) -> int:
         return 0
 
 
