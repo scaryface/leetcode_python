@@ -7,8 +7,7 @@ class ReplaceDigChar:
         for i in range(1, n, 2):
             new_chr = self.shift(s[i-1], int(s[i])) 
             s = s[:i] + new_chr + s[i+1:]
-        return s
-            
+        return s           
             
     
     def shift(self, a, num):
