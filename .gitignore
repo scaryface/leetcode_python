@@ -1,4 +1,5 @@
-*ipynb
+tryout.ipynb
+*.ipynb_checkpoints
 *.code-workspace
 settings*
 *.vscode
