@@ -20,6 +20,7 @@ class LinkedList:
         node.prev = self._sentinel__.prev
         node.next = self.__sentinel__
         self.__sentinel__.prev = node
+        return self.__sentinel__.next
 
 
     def delete(self, node):
@@ -27,5 +28,6 @@ class LinkedList:
             return None
         node.prev.next = node.next
         node.next.prev = node.prev
+        return self.__sentinel__.next
 
     
