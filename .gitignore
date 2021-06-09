@@ -3,3 +3,4 @@ tryout.ipynb
 *.code-workspace
 settings*
 *.vscode
+*__pycache__
